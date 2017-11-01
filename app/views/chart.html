@@ -1,0 +1,38 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header"></h1>
+    </div>
+    <!-- /.col-lg-12 -->
+</div>
+<div class="row">
+    <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12" id="bar-chart">
+        <div class="panel panel-default">
+            <div class="panel-heading">Flights delay Histogram</div>
+            <div class="panel-body">
+                <canvas id="bar" class="chart chart-bar" chart-data="bar.data" chart-labels="bar.labels"
+                 chart-series="bar.series" chart-options="bar.options"> </canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8 col-lg-offset-1 col-md-10 col-sm-12" id="bar-chart-ratio">
+        <div class="panel panel-default">
+            <div class="panel-heading">Flights delay ratio</div>
+            <div class="panel-body">
+                <canvas id="bar-ratio" class="chart chart-bar" chart-data="barRatio.data" chart-labels="barRatio.labels"
+                 chart-series="barRatio.series" chart-options="barRatio.options"> </canvas>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-2 col-md-2 col-sm-2">
+        <stats number="{{overAllDelayRatio}}" comments="Overall delay ratio" colour="primary" type="bar-chart"></stats>
+    </div>
+    <div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12" id="scatter-chart">
+        <div class="panel panel-default">
+            <div class="panel-heading">Delays and  distance correlation</div>
+            <div class="panel-body">
+                <canvas id="scatter" class="chart chart-bubble" chart-data="scatter.data" chart-labels="scatter.labels"
+                 chart-series="scatter.series" chart-options="scatter.options"> </canvas>
+            </div>
+        </div>
+    </div>
+</div>
