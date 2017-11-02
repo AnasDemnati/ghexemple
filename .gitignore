@@ -2,3 +2,5 @@ npm-debug.log
 .tmp
 .sass-cache
 .idea
+bower_components
+node_modules
