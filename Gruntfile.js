@@ -320,15 +320,18 @@ module.exports = function (grunt) {
           cwd: '<%= yeoman.app %>',
           dest: '<%= yeoman.dist %>',
           src: [ '**']
-        },{
-
+        }, {
           expand:true,
           cwd:'bower_components',
           dest:'<%= yeoman.dist %>/bower_components',
           src:['**']
-        } ,
+        }, {
 
-        {
+          expand:true,
+          cwd:'node_modules',
+          dest:'<%= yeoman.dist %>/node_modules',
+          src:['**']
+        }, {
           expand: true,
           cwd: '.tmp/images',
           dest: '<%= yeoman.dist %>/images',
@@ -371,7 +374,7 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:AnasDemnati/AnasDemnati.github.io.git',
+          remote: 'git@github.com:AnasDemnati/flightsotp.git',
           branch: 'gh-pages'
         }
       },
