@@ -76,6 +76,7 @@
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
+    "build": "grunt build",
     "dist": "grunt serve:dist",
     "postinstall": "bower install"
   }
