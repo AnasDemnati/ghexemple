@@ -1,0 +1,1 @@
+"use strict";angular.module("flightsOTP").directive("header",function(){return{templateUrl:"scripts/directives/header/header.html",restrict:"E",replace:!0}});
