@@ -3,4 +3,5 @@ npm-debug.log
 .sass-cache
 .idea
 bower_components
+dist
 node_modules
