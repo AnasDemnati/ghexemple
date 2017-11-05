@@ -69,10 +69,10 @@ module.exports = function (grunt) {
     // The actual grunt server settings
     connect: {
       options: {
-        port: 9000,
+        port: 9001,
         // Change this to '0.0.0.0' to access the server from outside.
         hostname: 'localhost',
-        livereload: 35729
+        livereload: 35728
       },
       livereload: {
         options: {
@@ -375,13 +375,13 @@ module.exports = function (grunt) {
       },
       pages: {
         options: {
-          remote: 'git@github.com:AnasDemnati/flightsotp.git',
+          remote: 'git@github.com:AnasDemnati/ghexemple.git',
           branch: 'gh-pages'
         }
       },
       heroku: {
         options: {
-          remote: 'git@heroku.com:example-heroku-webapp-1988.git',
+          remote: 'git@github.com:AnasDemnati/ghexemple.git',
           branch: 'master',
           tag: pkg.version
         }
